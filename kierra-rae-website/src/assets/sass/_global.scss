@@ -1,0 +1,111 @@
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-faded {
+  color: fade-out($white, 0.7);
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.site-background {
+  
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.head-pic {
+
+  
+  max-width: 100%;
+  background:linear-gradient(0deg, rgba(63, 63, 63, 0.3), rgba(255, 0, 149, 0.103)), url("../images/evelina-friman-hw_sKmjb0ns-unsplash.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  height: 650px;
+}
+
+.bar {
+  max-width: 100%;
+  height: 100px;
+  background-color: black;
+}
+.avatar {
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.avatar-container {
+  margin-bottom: 5px;
+}
+
+.header-logo {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.site-heading {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1;
+
+  @include heading-font;
+  .site-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .site-heading-lower {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 4rem;
+  }
+}
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  .section-heading-upper {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+
+.bg-faded {
+  background-color: rgba(0, 0, 0, 0.021);
+}
