@@ -56,14 +56,33 @@ const IndexPage = () => (
     <section>
       <div className="site-background container">
         <div className="row">
+          <div className="col-md-4"></div>
+          <div className="col-md-4">
+            <h2 className="section-heading mb-4">
+              <span className="section-heading-upper">My</span>
+              <span className="section-heading-lower">Services</span>
+            </h2>
+          </div>
+          <div className="col-md-4"></div>
+        </div>
+        <div className="row">
           <div className="col-md-4 avatar-container">
             <img className="avatar" src={pic1} alt="Events" />
+            <h2 className="section-heading mb-4">
+              <span className="section-heading-lower">Events</span>
+            </h2>
           </div>
           <div className="col-md-4 avatar-container">
             <img className="avatar" src={pic2} alt="Events" />
+            <h2 className="section-heading mb-4">
+              <span className="section-heading-lower">Consulting</span>
+            </h2>
           </div>
           <div className="col-md-4 avatar-container">
             <img className="avatar" src={pic3} alt="Events" />
+            <h2 className="section-heading mb-4">
+              <span className="section-heading-lower">Community</span>
+            </h2>
           </div>
         </div>
       </div>

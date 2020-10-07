@@ -16,7 +16,7 @@ export default class Header extends Component {
     const { openMenu } = this.state;
     const { activeLink } = this.props;
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <nav className="navbar navbar-expand-lg navbar-light py-lg-4" id="mainNav">
         <div className="container">
           {/* <a
             className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
@@ -27,13 +27,13 @@ export default class Header extends Component {
 
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
-            className={`navbar-toggler  ${openMenu ? '' : 'collapsed'}`}
+            className={`navbar-toggler navbar-light  ${openMenu ? '' : 'collapsed'}`}
             type="button"
             aria-controls="navbarResponsive"
             aria-expanded={openMenu}
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon navbar-light"></span>
           </button>
           <div
             className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
@@ -56,7 +56,7 @@ export default class Header extends Component {
               >
                 <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/about"
+                  to="#about"
                 >
                   About
                 </Link>
