@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import ContactLottie from '../components/ContactLottie';
+import LightBulbLottie from '../components/LightBulb';
 
 import intro from '../assets/images/image6.jpg';
 import pic1 from '../assets/images/luigi-pozzoli-34Xicn82lY4-unsplash.jpg';
@@ -31,7 +33,10 @@ const IndexPage = () => (
             src={intro}
             alt="Kierra Rae Profile"
           />
-          <div className="intro-text left-0 text-center bg-faded p-5 rounded">
+          <div
+            className="intro-text left-0 text-center bg-faded p-5 rounded"
+            style={{ marginTop: 50 }}
+          >
             <h2 className="section-heading mb-4">
               <span className="section-heading-upper">About Me</span>
               <span className="section-heading-lower">Kierra Rae</span>
@@ -48,7 +53,7 @@ const IndexPage = () => (
               committed to making her clients experience top notch!
             </p>
             <div className="intro-button mx-auto">
-              <a className="btn btn-primary btn-xl btn-light" href="/#">
+              <a className="btn btn-primary btn-xl btn-light" href="#contact">
                 Contact Me Today!
               </a>
             </div>
@@ -172,16 +177,16 @@ const IndexPage = () => (
     </section>
     <section className="contact" id="contact">
       <div class="container contact-form">
-        <div class="contact-image">
-          <img
-            src="https://image.ibb.co/kUagtU/rocket_contact.png"
-            alt="rocket_contact"
-            style={{ marginTop: 20 }}
-          />
+        <div class="contact-image" style={{ marginTop: 20 }}>
+          <div style={{ width: 150, height: 150 }}>
+            <ContactLottie />
+          </div>
         </div>
         <form method="post" action="https://formspree.io/f/mwkwvdzq">
           <h2 className="section-heading mb-4">
-            <span className="section-heading-upper">I Would Love to Hear from You!</span>
+            <span className="section-heading-upper">
+              I Would Love to Hear from You!
+            </span>
             <span className="section-heading-lower">Leave an Inquiry</span>
           </h2>
           <div class="row">
@@ -217,15 +222,6 @@ const IndexPage = () => (
                   Must use a vaild phone number.
                 </div>
               </div>
-              <div class="form-group">
-                <input
-                  type="submit"
-                  name="btnSubmit"
-                  class="btn btn-primary btn-light"
-                  value="Send Message"
-                  required
-                />
-              </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
@@ -238,6 +234,15 @@ const IndexPage = () => (
                 ></textarea>
               </div>
             </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="submit"
+              name="btnSubmit"
+              class="btn btn-primary btn-light"
+              value="Send Message"
+              required
+            />
           </div>
         </form>
       </div>

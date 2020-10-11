@@ -32,6 +32,21 @@ p {
   margin-top: 10px;
 }
 
+.animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+
+.contact-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
 section.contact {
   text-align: center;
   margin-bottom: 0px;
@@ -66,15 +81,15 @@ section.contact {
 }
 
 .effect1 {
--webkit-box-shadow: 16px 14px 0px 0px rgba(250,192,203,1);
--moz-box-shadow: 16px 14px 0px 0px rgba(250,192,203,1);
-box-shadow: 16px 14px 0px 0px rgba(250,192,203,1);
+  -webkit-box-shadow: 16px 14px 0px 0px rgba(250, 192, 203, 1);
+  -moz-box-shadow: 16px 14px 0px 0px rgba(250, 192, 203, 1);
+  box-shadow: 16px 14px 0px 0px rgba(250, 192, 203, 1);
 }
 
 .effect2 {
--webkit-box-shadow: 2px 3px 6px -1px rgba(168,168,168,1);
--moz-box-shadow: 2px 3px 6px -1px rgba(168,168,168,1);
-box-shadow: 2px 3px 6px -1px rgba(168,168,168,1);
+  -webkit-box-shadow: 2px 3px 6px -1px rgba(168, 168, 168, 1);
+  -moz-box-shadow: 2px 3px 6px -1px rgba(168, 168, 168, 1);
+  box-shadow: 2px 3px 6px -1px rgba(168, 168, 168, 1);
 }
 
 .form-space {

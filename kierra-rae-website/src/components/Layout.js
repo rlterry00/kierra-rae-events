@@ -33,11 +33,60 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Kierra Rae Events' },
-                { name: 'keywords', content: 'food, events, celebration, party, social, experience' },
+                {
+                  name: 'description',
+                  content:
+                    'Kierra Rae Events & Consulting, LLC is a remote, premier event company that offers event planning and consulting services.',
+                },
+                {
+                  name: 'keywords',
+                  content:
+                    'food, events, celebration, party, social, experience, community, consulting',
+                },
+                {
+                  name: 'image',
+                  content:
+                    'https://www.kierraraeevents.com/static/image7-2d63f338e507832fafb5dcb76b798dc8.jpg',
+                },
               ]}
             >
               <html lang="en" />
+              {/* <!-- Open Graph / Facebook --> */}
+              <meta property="og:type" content="website" />
+              <meta
+                property="og:url"
+                content="https://www.kierraraeevents.com"
+              />
+              <meta
+                property="og:title"
+                content="Kierra Rae Events & Consulting, LLC"
+              />
+              <meta
+                property="og:description"
+                content="Kierra Rae Events & Consulting, LLC is a remote, premier event company that offers event planning and consulting services."
+              />
+              <meta
+                property="og:image"
+                content="https://www.kierraraeevents.com/static/image7-2d63f338e507832fafb5dcb76b798dc8.jpg"
+              />
+              {/* <!-- Twitter --> */}
+              <meta property="twitter:card" content="summary_large_image" />
+              <meta
+                property="twitter:url"
+                content="https://www.kierraraeevents.com"
+              />
+              <meta
+                property="twitter:title"
+                content="Kierra Rae Events & Consulting, LLC"
+              />
+              <meta
+                property="twitter:description"
+                content="Kierra Rae Events & Consulting, LLC is a remote, premier event company that offers event planning and consulting services."
+              />
+              <meta
+                property="twitter:image"
+                content="https://www.kierraraeevents.com/static/image7-2d63f338e507832fafb5dcb76b798dc8.jpg"
+              />
             </Helmet>
             <div className={'page-top'}>
               {!noSiteHeader ? <SiteHeader /> : null}

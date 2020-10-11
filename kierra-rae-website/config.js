@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: 'Kierra Rae Events', // <title>
-  manifestName: 'Kierra Rae Events',
+  siteTitle: 'Kierra Rae Events & Consulting, LLC', // <title>
+  manifestName: 'Kierra Rae Events & Consulting, LLC',
   manifestShortName: 'Kierra Rae', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
