@@ -2,11 +2,90 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: fade-out($primary, 0.1);
+  max-width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(63, 63, 63, 0.3),
+      rgba(19, 18, 18, 0.103)
+    ),
+    url('../images/marc-babin-aQWmCH_b3MU-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: auto;
   .cta-inner {
     position: relative;
     padding: 3rem;
     margin: 0.5rem;
-    background-color: fade-out($white, 0.15);
+    background-color: fade-out($white, 0.05);
+    &:before {
+      border-radius: 0.5rem;
+      content: '';
+      position: absolute;
+      top: -0.5rem;
+      bottom: -0.5rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      border: 0.25rem solid fade-out($white, 0.15);
+      z-index: -1;
+    }
+  }
+}
+
+.cta2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: fade-out($primary, 0.1);
+  max-width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(63, 63, 63, 0.3),
+      rgba(19, 18, 18, 0.103)
+    ),
+    url('../images/eric-rothermel-FoKO4DpXamQ-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: auto;
+  .cta-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+    background-color: fade-out($white, 0.05);
+    &:before {
+      border-radius: 0.5rem;
+      content: '';
+      position: absolute;
+      top: -0.5rem;
+      bottom: -0.5rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      border: 0.25rem solid fade-out($white, 0.15);
+      z-index: -1;
+    }
+  }
+}
+
+.cta3 {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  background-color: fade-out($primary, 0.1);
+  max-width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(63, 63, 63, 0.3),
+      rgba(19, 18, 18, 0.103)
+    ),
+    url('../images/image5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: auto;
+  .cta-inner {
+    position: relative;
+    padding: 3rem;
+    margin: 0.5rem;
+    background-color: fade-out($white, 0.05);
     &:before {
       border-radius: 0.5rem;
       content: '';

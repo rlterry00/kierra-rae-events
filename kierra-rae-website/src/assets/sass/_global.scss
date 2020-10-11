@@ -26,19 +26,71 @@ p {
 }
 
 .site-background {
-  
   max-width: 100%;
   height: 100%;
   text-align: center;
   margin-top: 10px;
 }
 
-.head-pic {
-
-  
+section.contact {
+  text-align: center;
+  margin-bottom: 0px;
   max-width: 100%;
-  background:linear-gradient(0deg, rgba(63, 63, 63, 0.3), rgba(255, 0, 149, 0.103)), url("../images/evelina-friman-hw_sKmjb0ns-unsplash.jpg");
-  background-size:cover;
+  // background: linear-gradient(
+  //     0deg,
+  //     rgba(63, 63, 63, 0.884),
+  //     rgba(19, 18, 18, 0.233)
+  //   ),
+  //   url('../images/pink-rose.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position-y: bottom;
+  height: auto;
+  hr {
+    max-width: 250px;
+    margin: 25px auto 0;
+    border-width: 2px;
+    border-color: black;
+  }
+}
+.contactForm {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 800px) {
+  .contactForm {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.effect1 {
+-webkit-box-shadow: 16px 14px 0px 0px rgba(250,192,203,1);
+-moz-box-shadow: 16px 14px 0px 0px rgba(250,192,203,1);
+box-shadow: 16px 14px 0px 0px rgba(250,192,203,1);
+}
+
+.effect2 {
+-webkit-box-shadow: 2px 3px 6px -1px rgba(168,168,168,1);
+-moz-box-shadow: 2px 3px 6px -1px rgba(168,168,168,1);
+box-shadow: 2px 3px 6px -1px rgba(168,168,168,1);
+}
+
+.form-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.head-pic {
+  max-width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(63, 63, 63, 0.3),
+      rgba(12, 12, 12, 0.103)
+    ),
+    url('../images/evelina-friman-hw_sKmjb0ns-unsplash.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
   height: 650px;
@@ -88,8 +140,8 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .section-heading {
