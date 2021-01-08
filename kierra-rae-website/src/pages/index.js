@@ -1,4 +1,6 @@
 import React from 'react';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import Layout from '../components/Layout';
 import ContactLottie from '../components/ContactLottie';
@@ -11,6 +13,7 @@ import pic3 from '../assets/images/brandon-jacoby-JH3R3JP2w4c-unsplash.jpg';
 import pic4 from '../assets/images/image7.jpg';
 import pic5 from '../assets/images/stil-zv5QSKaP8G8-unsplash.jpg';
 import pic6 from '../assets/images/image8.png';
+import flyer from '../assets/images/Official Flyer- Night Under the Stars-1.png';
 
 const IndexPage = () => (
   <Layout activeLink="home">
@@ -61,7 +64,45 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-
+    <section id="upcoming">
+      <div className="site-background bg-faded container">
+        <div className="content" style={{ padding: 50 }}>
+          <div className="row">
+            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <h2 className="section-heading mb-4">
+                <span className="section-heading-upper">Upcoming</span>
+                <span className="section-heading-lower">Events</span>
+              </h2>
+              <p className="mb-3">(Press flyer to zoom in)</p>
+            </div>
+            <div className="col-md-4"></div>
+          </div>
+          <div className="d-flex flex-row justify-content-center align-items-center">
+            <div>
+              <h2 className="section-heading mb-4">
+                <Zoom>
+                  <img
+                    className="intro-img img-fluid mb-3 mb-lg-0 rounded effect1"
+                    src={flyer}
+                    alt="Event Flyer"
+                    width={600}
+                  />
+                </Zoom>
+              </h2>
+              <div className="intro-button mx-auto">
+                <a
+                  className="btn btn-primary btn-xl btn-light"
+                  href="https://www.eventbrite.com/e/a-night-under-the-stars-chefs-table-experience-tickets-124779311279"
+                >
+                  Buy Tickets
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="services">
       <div className="site-background container">
         <div className="row">
