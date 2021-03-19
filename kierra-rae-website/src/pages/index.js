@@ -64,7 +64,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section id="upcoming">
+    {/* <section id="upcoming">
       <div className="site-background bg-faded container">
         <div className="content" style={{ padding: 50 }}>
           <div className="row">
@@ -102,12 +102,12 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <section id="services">
       <div className="site-background container">
         <div className="row">
           <div className="col-md-4"></div>
-          <div className="col-md-4">
+          <div className="col-md-4" style={{ marginTop: 80 }}>
             <h2 className="section-heading mb-4">
               <span className="section-heading-upper">My</span>
               <span className="section-heading-lower">Services</span>

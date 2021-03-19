@@ -61,7 +61,7 @@ export default class Header extends Component {
                   About
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={`nav-item px-lg-4 ${
                   activeLink === 'upcoming' ? 'active' : ''
                 }`}
@@ -72,7 +72,7 @@ export default class Header extends Component {
                 >
                   Events
                 </Link>
-              </li>
+              </li> */}
               <li
                 className={`nav-item px-lg-4 ${
                   activeLink === 'services' ? 'active' : ''
